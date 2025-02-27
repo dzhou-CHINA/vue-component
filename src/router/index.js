@@ -15,9 +15,6 @@ const TableTransform2 = () => import('@/views/excelTable/transform2')
 
 const CreateQrCode = () => import('@/views/qrCode/index')
 
-const TestPage = () => import('@/views/Test')
-const SignPage = () => import('@/views/sign')
-
 Vue.use(Router)
 
 let router = new Router({
@@ -97,22 +94,6 @@ let router = new Router({
             }
           ]
         },
-
-        {
-          path: 'test',
-          component: TestPage,
-          meta: {
-            title: 'Passive Event Test'
-          }
-        },
-
-        {
-          path: 'sign',
-          component: SignPage,
-          meta: {
-            title: 'Passive Event Test'
-          }
-        }
       ]
     }
   ]
